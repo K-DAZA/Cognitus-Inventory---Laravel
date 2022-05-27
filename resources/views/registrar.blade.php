@@ -23,55 +23,38 @@
       <x-ImagenCognitus></x-ImagenCognitus>
 
       <div class="container">
-      <form action="" method="post" class="px-3">
+      <form action="{{route('añadir.movimiento')}}" method="post" class="px-3">
         <hr>
+
+        {{--TOKEN DEL FORMULARIO--}}
+        {{ csrf_field() }}
 
         <h3 class="text-center mb-5">Información del Movimiento</h3>
       
 
         <label for=""><h4>1. ID del Moivimiento :</h4></label>
-        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el id del movimiento">
+        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el id del movimiento" name="id_movimiento">
 
         <label for=""><h4>2. Tipo de Moivimiento :</h4></label>
-        <input type="number" class="form-control" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento">
+        <input type="number" class="form-control" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento" name="tipo_movimiento">
         <small id="" class="form-text text-muted mb-4">1 = Movimiento de entrada / 2 = Movimiento de salida</small>
 
         <label for=""><h4>3. Fecha de Moivimiento :</h4></label>
-        <input type="date" class="form-control mb-5" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento">
+        <input type="date" class="form-control mb-5" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento" name="fecha_movimiento">
 
         <hr>
 
-        <h3 class="text-center mb-5">Información del Detalle</h3>
-
-        <label for=""><h4>1. Codigo del Producto :</h4></label>
-        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el codigo del producto">
-
-        <label for=""><h4>2. Nombre del Producto :</h4></label>
-        <input type="text" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el nombre del producto">
-
-        <label for=""><h4>3. ID del Movimiento :</h4></label>
-        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el id del movimiento">
-
-        <label for=""><h4>4. Descripción breve del producto :</h4></label>
-        <input type="text" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese una breve descripción del producto">
-
-        <label for=""><h4>5. Cantidad del producto :</h4></label>
-        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese la cantidad del producto">
-
-        <label for=""><h4>6. Valor unitario del producto :</h4></label>
-        <input type="number" class="form-control mb-5" id="" aria-describedby="" placeholder="Ingrese el valor unitario del producto">
-
-        <hr class="mb-5">
-
-
+        <div class="container text-center">
+          <button type="submit" class="btn btn-success col-6 pt-3 p-2"><h5>Registrar movimiento ✔️</h5></button>
+        </div>
+        <div class="container text-center">
+          <a class="btn btn-danger p-2 col-6 pt-3 mt-4 mb-5" href="/" role="button"><h5>Regresar al apartado principal 👈🏻</h5></a>
+        </div>
 
       </form>
       </div>
 
-      <div class="container text-center">
-        <button type="submit" class="btn btn-success col-6 pt-3 p-2"><h5>Registrar movimiento ✔️</h5></button>
-        <a class="btn btn-danger p-2 col-6 pt-3 mt-4 mb-5" href="/" role="button"><h5>Regresar al apartado principal 👈🏻</h5></a>
-      </div>
+      
     </div>
 
     <div class="container text-center mt-5 text-white mb-5">

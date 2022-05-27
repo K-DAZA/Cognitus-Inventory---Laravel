@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 // - - - - - VISTAS - - - - - - - - - - - - - - - - - - - 
+
 Route::get('/', 'IndexController@index');
 Route::get('/registrar', 'RegistrarController@registrar');
+Route::get('/producto', 'ProductoController@producto')->name('vista.producto');
+
+
+// ------------------------- METODOS POST ---------------------
+
+Route::post('/registrar', 'RegistrarController@registro')->name('añadir.movimiento');
+Route::post('/producto', 'ProductoController@registrarProducto')->name('añadir.producto');
+
