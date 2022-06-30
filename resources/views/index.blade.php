@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,12 +25,14 @@
       <x-ImagenCognitus></x-ImagenCognitus>
 
       <div class="container text-center">
-        <a class="btn btn-success p-2 col-6 pt-3" href="/registrar" role="button"><h5>Registrar un Movimiento 📋</h5></a>
+        <a class="btn btn-info p-2 col-6 pt-3 mb-4" href="/registrar" role="button"><h5>Registrar un Movimiento 📋</h5></a>
+        <a class="btn btn-info p-2 col-6 pt-3 mb-4" href="/producto" role="button"><h5>Registrar un Producto 📋</h5></a>
+        <a class="btn btn-info p-2 col-6 pt-3 mb-4" href="/registrar" role="button"><h5>Editar Registros 📋</h5></a>
         <a class="btn btn-primary p-2 col-6 pt-3 mt-4 mb-5" href="/consultas" role="button"><h5>Consultas 🔎</h5></a>
       </div>
     </div>
 
-    <div class="container text-center mt-5 text-white">
+    <div class="container text-center mt-5 text-white mb-5">
       <h3>Developed By: <i>Cognitus Fundation</i></h3>
       <h4>2022</h4>
     </div>

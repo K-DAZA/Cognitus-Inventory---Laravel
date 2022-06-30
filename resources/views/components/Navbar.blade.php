@@ -17,6 +17,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/consultas">Consultas</a>
         </li>
+
         {{--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown
@@ -31,6 +32,7 @@
         {{--<li class="nav-item">
           <a class="nav-link" href="#">Disabled</a>
         </li>--}}
+        
       </ul>
     </div>
 </nav>

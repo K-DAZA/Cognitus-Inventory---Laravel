@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Aplicativo Inventario Cognitus</title>
-    
+
   </head>
   <body style="background-color: #455a64;">
 
@@ -17,19 +18,19 @@
     <x-Navbar></x-Navbar>
 
     <div class="container bg-white rounded mt-5 p-2 pt-5 border border-dark">
-      <h1 class="text-center mb-5">💻 Cognitus Inventory - Registrar Movimiento</h1>
+      <h1 class="text-center mb-5">💻 Cognitus Inventory - Consultas Tabla Movimientos</h1>
+
 
       {{--IMAGEN DE COGNITUS--}}
       <x-ImagenCognitus></x-ImagenCognitus>
 
-      <div class="container">
-      <form action="{{route('añadir.movimiento')}}" method="post" class="px-3">
+      <form action="{{route('añadir.movimiento')}}" method="post" class="px-5">
         <hr>
 
         {{--TOKEN DEL FORMULARIO--}}
         {{ csrf_field() }}
 
-        <h3 class="text-center mb-5">Información del Movimiento</h3>
+        <h3 class="text-center mb-5">Consulta del Movimiento</h3>
       
 
         <label for=""><h4>1. ID del Movimiento :</h4></label>
@@ -45,16 +46,13 @@
         <hr>
 
         <div class="container text-center">
-          <button type="submit" class="btn btn-success col-6 pt-3 p-2"><h5>Registrar movimiento ✔️</h5></button>
+            <button type="submit" class="btn btn-primary col-6 pt-3 p-2 mb-4"><h5>Ver los todos los registros </h5></button>
+          <button type="submit" class="btn btn-success col-6 pt-3 p-2"><h5>Realizar Consulta ✔️</h5></button>
         </div>
         <div class="container text-center">
           <a class="btn btn-danger p-2 col-6 pt-3 mt-4 mb-5" href="/" role="button"><h5>Regresar al apartado principal 👈🏻</h5></a>
         </div>
-
       </form>
-      </div>
-
-      
     </div>
 
     <div class="container text-center mt-5 text-white mb-5">

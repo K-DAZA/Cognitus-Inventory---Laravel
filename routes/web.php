@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index');
 Route::get('/registrar', 'RegistrarController@registrar');
 Route::get('/producto', 'ProductoController@producto')->name('vista.producto');
+Route::get('/consultas', 'ConsultasController@vista')->name('vista.consultas');
+Route::get('/cmovimiento', 'MovimientoController@consulta')->name('vista.consultasmovimiento');
+
 
 
 // ------------------------- METODOS POST ---------------------

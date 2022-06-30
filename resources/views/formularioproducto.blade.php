@@ -38,7 +38,7 @@
           <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el codigo del producto" name="codigo_producto">
 
           <label for=""><h4>2. ID del Movimiento :</h4></label>
-          <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el id del movimiento" name="id_movimiento">
+          <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="id del movimiento" name="id_movimiento" disabled>
 
           <label for=""><h4>3. Nombre del Producto :</h4></label>
           <input type="text" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el nombre del producto" name="nombre_producto">

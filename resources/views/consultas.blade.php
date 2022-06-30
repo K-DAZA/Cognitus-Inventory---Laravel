@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Aplicativo Inventario Cognitus</title>
-    
+
   </head>
   <body style="background-color: #455a64;">
 
@@ -17,47 +18,20 @@
     <x-Navbar></x-Navbar>
 
     <div class="container bg-white rounded mt-5 p-2 pt-5 border border-dark">
-      <h1 class="text-center mb-5">💻 Cognitus Inventory - Registrar Movimiento</h1>
+      <h1 class="text-center mb-5">💻 Cognitus Inventory - Consultas</h1>
+
 
       {{--IMAGEN DE COGNITUS--}}
       <x-ImagenCognitus></x-ImagenCognitus>
 
-      <div class="container">
-      <form action="{{route('añadir.movimiento')}}" method="post" class="px-3">
-        <hr>
-
-        {{--TOKEN DEL FORMULARIO--}}
-        {{ csrf_field() }}
-
-        <h3 class="text-center mb-5">Información del Movimiento</h3>
-      
-
-        <label for=""><h4>1. ID del Movimiento :</h4></label>
-        <input type="number" class="form-control mb-4" id="" aria-describedby="" placeholder="Ingrese el id del movimiento" name="id_movimiento">
-
-        <label for=""><h4>2. Tipo de Movimiento :</h4></label>
-        <input type="number" class="form-control" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento" name="tipo_movimiento">
-        <small id="" class="form-text text-muted mb-4">1 = Movimiento de entrada / 2 = Movimiento de salida</small>
-
-        <label for=""><h4>3. Fecha de Movimiento :</h4></label>
-        <input type="date" class="form-control mb-5" id="" aria-describedby="" placeholder="Ingrese el tipo del movimiento" name="fecha_movimiento">
-
-        <hr>
-
-        <div class="container text-center">
-          <button type="submit" class="btn btn-success col-6 pt-3 p-2"><h5>Registrar movimiento ✔️</h5></button>
-        </div>
-        <div class="container text-center">
-          <a class="btn btn-danger p-2 col-6 pt-3 mt-4 mb-5" href="/" role="button"><h5>Regresar al apartado principal 👈🏻</h5></a>
-        </div>
-
-      </form>
+      <div class="container text-center">
+        <a class="btn btn-success p-2 col-6 pt-3 mb-4" href="/cmovimiento" role="button"><h5>Tabla Movimientos 🔎</h5></a>
+        <a class="btn btn-primary p-2 col-6 pt-3" href="/" role="button"><h5>Tabla Detalles 🔎</h5></a>
+        <a class="btn btn-danger p-2 col-6 pt-3 mt-4 mb-5" href="/" role="button"><h5>Regresar al apartado principal 👈🏻</h5></a>
       </div>
-
-      
     </div>
 
-    <div class="container text-center mt-5 text-white mb-5">
+    <div class="container text-center mt-5 text-white">
       <h3>Developed By: <i>Cognitus Fundation</i></h3>
       <h4>2022</h4>
     </div>
